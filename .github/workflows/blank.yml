@@ -16,7 +16,7 @@ jobs:
     - name: Install inso cli
       uses: ikeike443/inso-action@main
       with: 
-        opt-string: "generate config ./specs/orders.yaml --type kubernetes > ./README.md"
+        opt-string: "generate config ./specs/orders.yaml --type kubernetes"
     - name: Print Out Declaritive Config
       run: |
-        cat ./README.md
+        cat /tmp/kong.yaml
