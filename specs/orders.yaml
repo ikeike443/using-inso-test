@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   version: '1.1'
-  title: Pizza Order API
+  title: Pizza Order API test
   license:
     name: Apache 2.0
   description: 'Pizza ordering APIs for Kong Summit: 2020'
