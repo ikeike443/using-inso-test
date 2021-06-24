@@ -2,7 +2,7 @@ name: Action on Pull Request to generate Kong Config from Spec and Validate it
 on: 
   pull_request:
     branches: 
-      - master
+      - main
 jobs:
   deploy_to_kong:
     runs-on: ubuntu-latest
