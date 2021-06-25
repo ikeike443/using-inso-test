@@ -14,7 +14,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Install inso cli
-      uses: ikeike443/setup-inso@0.1
+      uses: ikeike443/setup-inso@main
       with:
         inso-version: 2.2.35
     - name: exec inso
