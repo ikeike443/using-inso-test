@@ -17,7 +17,7 @@ jobs:
       uses: ikeike443/setup-inso@main
     - name: exec inso
       run: |
-        inso generate config ./specs/orders.yaml -o kong.yaml
+        /opt/hostedtoolcache/inso/latest/x64/inso generate config ./specs/orders.yaml -o kong.yaml
     - name: Print Out Declaritive Config
       run: |
         cat kong.yaml
