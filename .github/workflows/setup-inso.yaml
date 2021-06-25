@@ -1,1 +1,22 @@
-
+name: Action on Pull Request to generate Kong Config from Spec and Validate it
+on: 
+  push:
+    branches:
+      - main
+  pull_request:
+    branches: 
+      - main
+jobs:
+  deploy_to_kong:
+    runs-on: ubuntu-latest
+    name: Generate Kong config from Spec and Validate config
+    steps:        
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Install inso cli
+      uses: ikeike443/setup-inso@main
+    - name: exec inso
+      run: inso generate config ./specs/orders.yaml -o kong.yaml
+    - name: Print Out Declaritive Config
+      run: |
+        cat kong.yaml
