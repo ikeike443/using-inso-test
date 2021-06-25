@@ -16,7 +16,8 @@ jobs:
     - name: Install inso cli
       uses: ikeike443/setup-inso@main
     - name: exec inso
-      run: inso generate config ./specs/orders.yaml -o kong.yaml
+      run: |
+        inso generate config ./specs/orders.yaml -o kong.yaml
     - name: Print Out Declaritive Config
       run: |
         cat kong.yaml
