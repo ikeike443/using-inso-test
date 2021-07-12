@@ -25,4 +25,4 @@ jobs:
         cat kong.yaml
     - name: inso run test
       run: |
-        inso run test
+        inso run test "New Suite"
