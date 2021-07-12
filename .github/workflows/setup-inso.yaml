@@ -16,7 +16,7 @@ jobs:
     - name: Install inso cli
       uses: ikeike443/setup-inso@v1
       with:
-        inso-version: 2.2.35.1
+        inso-version: 2.2.36
     - name: exec inso
       run: |
         inso generate config ./specs/orders.yaml -o kong.yaml
