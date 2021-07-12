@@ -23,3 +23,6 @@ jobs:
     - name: Print Out Declaritive Config
       run: |
         cat kong.yaml
+    - name: inso run test
+      run: |
+        inso run test
