@@ -13,17 +13,10 @@ jobs:
     steps:        
     - name: Checkout
       uses: actions/checkout@v2
-    - name: Setup Node
-      uses: actions/setup-node@v2
-      with: 
-        node-version: '12'
-    - name: install es-get-iterator
-      run: |
-        npm install -g es-get-iterator
     - name: Install inso cli
       uses: ikeike443/setup-inso@v1
       with:
-        inso-version: 2.2.35
+        inso-version: 2.2.35.1
     - name: exec inso
       run: |
         inso generate config ./specs/orders.yaml -o kong.yaml
